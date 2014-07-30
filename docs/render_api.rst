@@ -89,7 +89,7 @@ Paths also support the following wildcards, which allows you to identify more th
   All wildcards apply only within a single path element.  In other words, they do not include or cross dots (``.``).
   Therefore, ``servers.*`` will not match ``servers.ix02ehssvc04v.cpu.total.user``, while ``servers.*.*.*.*`` will.
 
-  
+
 Examples
 ^^^^^^^^
 
@@ -374,7 +374,7 @@ areaAlpha
 ---------
 *Default: 1.0*
 
-Takes a floating point number between 0.0 and 1.0 
+Takes a floating point number between 0.0 and 1.0
 
 Sets the alpha (transparency) value of filled areas when using an areaMode_
 
@@ -385,7 +385,7 @@ areaMode
 *Default: none*
 
 Enables filling of the area below the graphed lines. Fill area is the same color as
-the line color associated with it. See areaAlpha_ to make this area transparent. 
+the line color associated with it. See areaAlpha_ to make this area transparent.
 Takes one of the following parameters which determines the fill mode to use:
 
 ``none``
@@ -400,7 +400,7 @@ Takes one of the following parameters which determines the fill mode to use:
 
 
 .. _param-bgcolor:
-  
+
 bgcolor
 -------
 *Default: value from the [default] template in graphTemplates.conf*
@@ -440,7 +440,7 @@ Examples:
 .. code-block:: none
 
   &bgcolor=blue
-  &bgcolor=#2222FF
+  &bgcolor=2222FF
 
 cacheTimeout
 ------------
@@ -460,7 +460,7 @@ Example:
 
 .. code-block:: none
 
-  &colorList=green,yellow,orange,red,purple,#DECAFF
+  &colorList=green,yellow,orange,red,purple,DECAFF
 
 .. _param-drawNullAsZero:
 
@@ -470,7 +470,7 @@ drawNullAsZero
 
 Converts any None (null) values in the displayed metrics to zero at render time.
 
-.. _param-fgcolor: 
+.. _param-fgcolor:
 
 fgcolor
 -------
@@ -730,7 +730,7 @@ Example:
 
 .. code-block:: none
 
-  &majorGridLineColor=#FF22FF
+  &majorGridLineColor=FF22FF
 
 margin
 ------
@@ -750,7 +750,7 @@ max
 
 maxDataPoints
 -------------
-Set the maximum numbers of datapoints returned when using json content. 
+Set the maximum numbers of datapoints returned when using json content.
 
 If the number of datapoints in a selected range exceeds the maxDataPoints value then the datapoints over the whole period are consolidated.
 
@@ -880,7 +880,7 @@ Example:
   &title=Apache Busy Threads, All Servers, Past 24h
 
 .. _param-tz:
-  
+
 tz
 --
 *Default: The timezone specified in local_settings.py*
@@ -956,7 +956,7 @@ Sets the time format used when displaying the X-axis. See
 for format specification details.
 
 .. _param-yAxisSide:
-  
+
 yAxisSide
 ---------
 *Default: left*
@@ -964,7 +964,7 @@ yAxisSide
 Sets the side of the graph on which to render the Y-axis. Accepts values of ``left`` or ``right``
 
 .. _param-yDivisor:
-  
+
 yDivisor
 --------
 *Default: 4,5,6*
@@ -1033,7 +1033,7 @@ yMinRight
 In dual Y-axis mode, sets the lower bound of the right Y-Axis (See: `yMin`_)
 
 .. _param-yStep:
-  
+
 yStep
 -----
 *Default: Calculated automatically*
